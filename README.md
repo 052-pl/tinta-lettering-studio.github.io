@@ -1,4 +1,4 @@
-# TINTA — Lettering & Calligraphy Studio
+# TINTA — Lettering & Calligraphy Studio (V2)
 
 ![TINTA Lettering & Calligraphy Studio](assets/images/logo/tinta-logo.jpg)
 
@@ -17,6 +17,14 @@ TINTA celebrates the expressive side of letters: the rhythm of a pen, the charac
 - **Custom Designs** — personalized lettering concepts for names, quotes, invitations, and brands.
 - **Gifts & Accessories** — thoughtful pieces for creative people.
 - **Lettering Art** — artwork and visual inspiration.
+
+## 🖼️ V2 Image Framing Improvements
+
+- Removed blank padded areas inside category and product photographs.
+- Re-exported each category and product photo from its own image region.
+- Category photography uses a consistent wide frame; product photography uses a consistent landscape frame.
+- Image cards fill their frames cleanly without beige letterboxing or internal borders.
+- Preserved the existing filenames and local asset paths so page functionality remains connected.
 
 ## ✨ Features
 
@@ -105,7 +113,7 @@ These contact details are fictional placeholders for demonstration and must be r
 
 ## 🧪 Project Status
 
-**Status: Project in development**
+**Status: Project in development — V2 image framing pass completed**
 
 TINTA is a static frontend storefront concept. Future iterations could connect real product inventory, custom-order requests, payment processing, customer accounts, and a production newsletter service.
 
