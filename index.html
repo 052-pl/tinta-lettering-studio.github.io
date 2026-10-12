@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171714">
+  <meta name="description" content="TINTA Lettering & Calligraphy Studio — premium lettering tools, calligraphy supplies, paper goods, and custom creative work.">
+  <title>TINTA — Lettering & Calligraphy Studio</title>
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon/tinta-favicon.jpg">
+  <link rel="preload" as="image" href="assets/images/hero/tinta-hero.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/script.js"></script>
+</head>
+<body>
+  <div class="announcement">A little more art in every day <span>✦</span> Thoughtful tools for creative minds</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="TINTA home">
+      <img src="assets/images/logo/tinta-logo.jpg" alt="TINTA Lettering and Calligraphy Studio logo">
+      <span class="brand-copy"><strong>TINTA</strong><small>LETTERING & CALLIGRAPHY<br>STUDIO</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a><a href="#shop">Shop</a><a href="#categories">Collections</a>
+      <a href="#custom">Custom Work</a><a href="#studio">Our Studio</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-box" aria-label="Search products"><span>⌕</span><input id="searchInput" type="search" placeholder="Search pens, inks, paper…" autocomplete="off"></label>
+      <button class="icon-button" id="wishlistTop" aria-label="View saved items">♡ <span class="action-label">Saved</span><b id="wishlistCount">0</b></button>
+      <button class="icon-button bag-button" id="cartToggle" aria-label="Open shopping bag">Bag <b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img class="hero-image" src="assets/images/hero/tinta-hero.jpg" alt="Calligraphy pens, ink and textured paper arranged on an artist's desk">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">LETTERS CREATE EMOTIONS</p>
+        <h1>Artisan lettering<br>for a more <em>creative</em> world.</h1>
+        <p class="hero-description">Premium calligraphy tools, lettering supplies and thoughtful custom designs, crafted for people who love the beauty of a well-made letter.</p>
+        <a class="button button-gold" href="#shop">Explore the collections <span>↗</span></a>
+        <div class="hero-notes"><span>✦ Carefully selected tools</span><span>✦ Made for creative practice</span></div>
+      </div>
+      <div class="hero-index"><span>01</span><span class="line"></span><span>03</span></div>
+    </section>
+
+    <section class="category-section section-wrap" id="categories">
+      <div class="section-heading"><div><p class="eyebrow dark">FIND YOUR FLOW</p><h2>Shop by collection</h2></div><p>Small details. Beautiful possibilities.</p></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Pens"><img src="assets/images/categories/calligraphy-pens.jpg" alt="Calligraphy pens and nibs"><span>Calligraphy pens</span><small>Explore collection ↗</small></button>
+        <button class="category-card" data-category="Ink"><img src="assets/images/categories/inks-supplies.jpg" alt="Ink bottles and calligraphy supplies"><span>Inks & supplies</span><small>Explore collection ↗</small></button>
+        <button class="category-card" data-category="Paper"><img src="assets/images/categories/notebooks-paper.jpg" alt="Notebooks and textured paper"><span>Notebooks & paper</span><small>Explore collection ↗</small></button>
+        <button class="category-card" data-category="Custom"><img src="assets/images/categories/custom-designs.jpg" alt="Custom lettering artwork"><span>Custom designs</span><small>Made for you ↗</small></button>
+        <button class="category-card" data-category="Gifts"><img src="assets/images/categories/gifts-accessories.jpg" alt="Creative gifts and stationery"><span>Gifts & accessories</span><small>Find a thoughtful gift ↗</small></button>
+        <button class="category-card" data-category="Art"><img src="assets/images/categories/wall-art.jpg" alt="Framed lettering artwork"><span>Lettering art</span><small>Explore collection ↗</small></button>
+      </div>
+    </section>
+
+    <section class="shop-section section-wrap" id="shop">
+      <div class="section-heading shop-heading"><div><p class="eyebrow dark">THE STUDIO EDIT</p><h2>Handpicked essentials</h2><p class="muted">Considered tools for your next great idea.</p></div>
+        <div class="shop-controls"><select id="sortSelect" aria-label="Sort products"><option value="featured">Sort: Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A–Z</option></select><button class="text-button" id="clearFilters">Clear filters</button></div>
+      </div>
+      <div class="filter-row" id="filterRow" aria-label="Filter products">
+        <button class="filter-chip selected" data-filter="All">All pieces</button><button class="filter-chip" data-filter="Pens">Pens</button><button class="filter-chip" data-filter="Ink">Ink</button><button class="filter-chip" data-filter="Paper">Paper</button><button class="filter-chip" data-filter="Tools">Tools</button><button class="filter-chip" data-filter="Gifts">Gifts</button>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>No pieces match that search. Try another word or collection.</p>
+      <div class="centered"><button class="button button-outline" id="showAll">View all studio essentials <span>→</span></button></div>
+    </section>
+
+    <section class="editorial-grid section-wrap">
+      <article class="editorial-card custom-card" id="custom">
+        <img src="assets/images/editorial/custom-lettering.jpg" alt="Artist creating expressive lettering by hand" loading="lazy">
+        <div class="editorial-overlay"></div><div class="editorial-copy"><p class="eyebrow">MADE PERSONAL</p><h2>Your words,<br>beautifully told.</h2><p>Names, quotes, invitations and brand lettering, created with care.</p><a class="button button-gold" href="#contact">Request custom work ↗</a></div>
+      </article>
+      <article class="editorial-card supplies-card">
+        <img src="assets/images/editorial/premium-supplies.jpg" alt="Premium ink and writing tools on a dark work surface" loading="lazy">
+        <div class="editorial-overlay"></div><div class="editorial-copy"><p class="eyebrow">TOOLS WITH INTENTION</p><h2>Make room<br>for inspiration.</h2><p>Materials selected to make practice a pleasure.</p><a class="button button-light" href="#shop">Shop the studio ↗</a></div>
+      </article>
+    </section>
+
+    <section class="studio-section section-wrap" id="studio">
+      <div class="studio-photo"><img src="assets/images/editorial/studio-inspiration.jpg" alt="A creative desk with paper and lettering tools" loading="lazy"></div>
+      <div class="studio-copy"><p class="eyebrow dark">A STUDIO FOR UNIQUE IDEAS</p><h2>Every letter has<br>a little <em>character.</em></h2><p>TINTA brings the thoughtful rhythm of traditional calligraphy together with modern lettering and a love of beautiful materials. Whether you are beginning a daily practice or creating something personal, we believe the process deserves to feel as special as the finished piece.</p><a href="#contact" class="underlined-link">A note from the studio <span>↗</span></a><div class="studio-values"><span>Craft over clutter</span><span>Tools worth keeping</span><span>Room to experiment</span></div></div>
+    </section>
+
+    <section class="newsletter-section">
+      <div><p class="eyebrow">A NOTE FROM TINTA</p><h2>Ideas, ink & inspiration.</h2><p>Occasional studio notes, new collections and creative prompts. No clutter.</p></div>
+      <form id="newsletterForm" class="newsletter-form"><label for="newsletterEmail" class="sr-only">Your email address</label><input id="newsletterEmail" type="email" placeholder="Your email address" required><button class="button button-gold" type="submit">Join the list ↗</button><small id="newsletterMessage" aria-live="polite">A quiet little note, only when we have something worth sharing.</small></form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand" href="#home"><img src="assets/images/logo/tinta-logo.jpg" alt=""><span class="brand-copy"><strong>TINTA</strong><small>LETTERING & CALLIGRAPHY<br>STUDIO</small></span></a><p>Lettering with character.<br>Calligraphy with intention.<br>Design made by hand.</p></div>
+      <div><h3>Explore</h3><a href="#shop">Shop all</a><a href="#categories">Collections</a><a href="#custom">Custom work</a><a href="#studio">Our studio</a></div>
+      <div><h3>Studio care</h3><a href="#contact">Contact & support</a><a href="#contact">Shipping information</a><a href="#contact">Returns & exchanges</a><a href="#contact">FAQs</a></div>
+      <div><h3>Say hello</h3><p>Studio support</p><a href="mailto:support@tinta.example">support@tinta.example</a><a href="tel:+19125550148">+1 (912) 555-0148</a><p class="footer-note">Savannah, GA 31401, USA<br><small>Demo contact details</small></p></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 TINTA Lettering Studio. All rights reserved.</span><span>Made for the love of letters. <a href="#home">Back to top ↑</a></span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="side-panel" id="cartPanel" aria-label="Shopping bag" aria-hidden="true">
+    <div class="panel-header"><div><p class="eyebrow dark">YOUR SELECTION</p><h2>Studio bag <span id="panelCartCount">(0)</span></h2></div><button class="close-panel" data-close aria-label="Close bag">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div><p>Shipping and taxes calculated at checkout.</p><button class="button button-dark full-width" id="checkoutButton">Continue to checkout ↗</button><small id="checkoutMessage">Demo storefront — checkout is not connected.</small></div>
+  </aside>
+  <aside class="side-panel" id="wishlistPanel" aria-label="Saved products" aria-hidden="true">
+    <div class="panel-header"><div><p class="eyebrow dark">KEEP FOR LATER</p><h2>Saved pieces</h2></div><button class="close-panel" data-close aria-label="Close saved pieces">×</button></div>
+    <div id="wishlistItems" class="cart-items"></div>
+  </aside>
+
+  <dialog id="productDialog" class="product-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close product details">×</button><div id="productDetail"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
